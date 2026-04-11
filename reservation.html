@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="CSS/reservation.css">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+      <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+       <!-- Boxicons CSS -->
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     <!-- Animiation -->
+     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div class="main-container" style="display:none;"  id="myDiv" class="animate-bottom"> 
+        <header class="main-header" data-overlay-dark="4">
+            <div class="nav-list">
+                <nav class="navbar-inverse">
+                    <a href="#" class="navbar-brand">DINA</a>
+                    <ul class="navbar-right navigations" id="myLinks">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="restaurant.html">restaurant</a></li>
+                        <li><a href="reservation.html">reservation</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="FAQs.html">F.A.Qs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                        <a href="javascript:void(0);" class="icon" onclick="ourFunction()">
+                          <i class="fa fa-bars" id="Icon" ></i>
+                        </a>
+                </nav>
+            </div>
+            <div class="header-text">
+                <h1>BOOK YOUR TABLE</h1>
+                <h6>We accept reservation. Call us or complete the form below.</h6>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="context">
+                <div  class="note">
+                    <h1 class="header-note">Make a Reservation</h1>
+                    <p class="text-note">You may make a reservation any time online or by calling (000) 111 2222 during our opening hours:</p>
+
+                    <div class="form-note">
+                        <div class="form">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="form-list">
+                                        <label for="name">Name*</label>
+                                        <input type="text" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-list">
+                                        <label for="email">Email*</label>
+                                        <input type="email" name="email" id="" placeholder="Email">
+                                    </div>
+                                    <div class="form-list">
+                                        <label for="phone">Phone*</label>
+                                        <input type="number" name="phone" id="" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-list">
+                                        <label for="date">Date*</label>
+                                       <input type="date" name="" id="">
+                                    </div>
+                                    <div class="form-list">
+                                        <label for="time">Time*</label>
+                                        <input type="time" name="time" id="">
+                                    </div>
+                                    <div class="form-list">
+                                        <label for="seat">Seats*</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                    <label for="request">Special Requests</label>
+                                    <textarea name="text" id="" cols="100" rows="4" class="reservation-fields"></textarea>
+                                    <!-- HTML !-->
+                                <div class="btn">
+                                    <button class="button-89" role="button">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+
+    <footer class="main-footer">
+      <div class="footer-contaimer">
+        <div class="footer-row">
+          <div class="footer-about">
+            <h3>About Restaurant</h3>
+            <p>Welcome to the best five-star restaurant in New York. <br> Dina elementum sesue the aucan vestibulum aliquam <br> justo in sapien rutrum volutpat.</p>
+            <div class="footer-language">
+              <!-- <i class="fa fa-globe fa-4x" aria-hidden="true"></i> -->
+              <select name="select" id="" onchange="location = this.value">
+                <option value="#0">English</option>
+                <option value="#0">French</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer-explore">
+            <div class="footer-explore-inner">
+              <h3>Explore</h3>
+              <div class="footer-explore-links">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="pricing.html">Pricing</a></li>
+                  <li><a href="restaurant.html">Restaurant</a></li>
+                  <li><a href="FAQs.html">F.A.Qs</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-contact-inner">
+              <h3>Contact</h3>
+              <div class="footer-contact-information">
+                <p class="footer-par">1616 Broadway NY, New York 10001 <br>
+                  United States of America</p>
+                <div class="footer-contact-info">
+                  <p class="footer-contact-phone">
+                    <span class="fa fa-phone fa-x" aria-hidden="true"></span>
+                    "867 900 4565"
+                  </p>
+                  <p class="footer-contact-mail">info@luxuryhotel.com</p>
+                </div>
+                <div class="footer-icons">
+                  <i class="fa fa-instagram fa-x" aria-hidden="true"></i>
+                  <i class="fa fa-twitter fa-x" aria-hidden="true"></i>
+                  <i class="fa fa-youtube fa-x" aria-hidden="true"></i>
+                  <i class="fa fa-facebook fa-x" aria-hidden="true"></i>
+                  <i class="fa fa-pinterest-p fa-x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-container-2">
+      <div class="copyright">
+        &copy; Copyright 2023 by Smart Edge Hub
+      </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">
+    <span class="material-icons" style="color: #fff;">
+      north
+    </span>
+  </button>
+  
+  <div id="loader"></div>
+  <script>
+    /**
+     * Preloader
+     */
+   var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+   
+  <script>
+
+    // Back To Top Button
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+    <script>
+      function ourFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

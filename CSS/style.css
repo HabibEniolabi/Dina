@@ -1,0 +1,818 @@
+/* Fonts */
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Work Sans", sans-serif;
+  }
+
+  /* Smooth scroll behavior */
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: sans-serif;
+  }
+      .navbar-inverse {
+   background-color: transparent;
+   border-color: transparent;
+  }
+      .navbar-inverse .navbar-brand {
+   color: #fff;
+  }
+
+  .navbar-nav .navbar-right{
+    margin-top: 70px;
+  }
+
+  .navbar-inverse .navbar-brand :hover{
+    color: orange;
+  }
+
+  .navbar-brand a{
+    font-size: larger;
+    color: orange;
+  }
+
+  .navbar-brand{
+    font-family: "Sofia", sans-serif;
+  }
+
+  .navbar-nav .navbar-right{
+    /* font-family: monospace; */
+    font-size: larger;
+  }
+
+  .item img{
+    background:rgba(255, 255, 255, 0.2);
+  }
+
+      .navbar-inverse .navbar-nav > li > a {
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 900;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:hover{
+    color: #8e6d45;
+  }
+
+  header .carousel-inner .item > img{
+    height: 100vh;
+  }
+  header .carousel-inner .item > img{
+    width: 100%;
+  }
+  .carousel-caption{
+    padding-bottom: 250px;
+  }
+  .carousel-caption h4{
+    font-family: "Sofia", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .carousel-caption h1{
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .carousel-control.right{
+    background-image: none;
+  }
+  .carousel-control.left{
+    background-image: none;
+  }
+
+  .carousel-inner a{
+    position: relative;
+    color: inherit;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* font-family:'Barlow Condensed' 'Serif'; */
+    font-weight: 400;
+    background: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 12px 20px;
+    border: #fff 1px solid;
+    line-height: 1.2em;
+  }
+
+  .carousel-inner a:hover{
+    background-color: #fff;
+    color: black;
+  }
+
+/* =============================
+Pre-loader
+================================ */
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    margin: -76px 0 0 -76px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid #8e6d45;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  
+  /* ==============================
+  Back To Top Button
+  ================================= */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #8e6d45; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #f5d7b2; /* Add a dark-grey background on hover */
+  }
+
+/* ==========================
+Hero
+============================= */
+.hero{
+  padding: 80px 0;
+}
+
+.story{
+  display: flex;
+  margin: 0 3%;
+}
+
+.sketch{
+  width: 50%;
+}
+
+.sketch img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.story-note{
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.story-text{
+  font-size: 36px;
+  color: #8e6d45;
+  margin-bottom: 22px;
+  font-family: "Sofia", sans-serif;
+}
+
+.sub-tittle{
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text-note{
+  color: #8e6d45;
+  margin-bottom: 18px;
+}
+
+p{
+  font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.blockquote{
+  border-left: #8e6d45 3px solid;
+  margin: 20px;
+}
+
+cite{
+  color: #8e6d45;
+  font-size: 12px;
+  opacity: 0.05em;
+}
+
+.key-piont{
+  background-color: #8e6d45;
+  color: #fff;
+  padding: 3px 4px;
+}
+
+.history{
+  display: flex;
+  margin: 0 3%;
+  flex-direction: row-reverse;
+  padding: 40px 0;
+}
+
+@media only screen and (max-width:650px){
+  .story , .history{
+    display: inline;
+  }
+
+  .sketch , .story-note{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width:651px) and (max-width:1060px){
+  .story , .history{
+    display: inline;
+  }
+
+  .sketch , .story-note{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+  /*--------------------------------------------------------------
+# News
+--------------------------------------------------------------*/
+.news{
+  margin: 2% 3%;
+}
+
+.text{
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.news-text{
+  color: #8e6d45;
+  padding-bottom: 20px;
+  font-size: 46px;
+  font-family: "Sofia", sans-serif;
+}
+
+.news-par{
+  color: #666666;
+  max-width: 710px;
+  margin: auto;
+}
+
+.events{
+  display: flex;
+}
+
+.one{
+  margin-top: 3em;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.one-div{
+  background-color: #fff;
+  padding-bottom: 30px;
+  text-align: center;
+  display: block;
+}
+
+.img{
+  width: 100%;
+  /* height: 250px; */
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.img img{
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  object-fit: cover;
+}
+
+.heading{
+  font-family: "Sofia", sans-serif;
+  font-size: 27px;
+  padding: 10px 0;
+}
+
+.sub-heading{
+  padding: 0 15px;
+  font-size: 16.5px;
+  margin-bottom: 20px;
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-transform: uppercase;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.button-89 a{
+  text-decoration: none;
+  color: #111111;
+}
+
+@media only screen and (min-width:768px){
+  .one{
+  max-width: 33.3%;
+  flex: 0 0 33.3%;
+  }
+}
+
+@media only screen and (max-width:650px){
+  .news{
+    max-width: 650px;
+  }
+
+  .events{
+    display: inline;
+  }
+
+  .heading{
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (min-width:651px) and (max-width:1060px){
+  
+}
+/* =================================
+Testimonial Slider
+====================================*/
+.testimonials{
+  background-image: url(../IMAGES/dessert.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: cover;
+  align-items: center;
+  color: #fff;
+  padding: 70px 0;
+  height: 90vh;
+}
+
+/* Slides */
+.slideshow-container{
+  margin-top: -7%;
+}
+
+.mySlides {
+  display: inline;
+  padding: 80px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+/* Next & previous buttons */
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 100%;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+} */
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+ .dot:hover {
+  background-color: #8e6d45;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {
+  display: flex;
+  margin-top: 4%;
+}
+
+.author img{
+  width: 8%;
+  height: 10vh;
+  border-radius: 100%;
+  display: block;
+  padding-right: 9px;
+}
+
+.sub_author{
+  display: inline;
+}
+
+.sub_author h4 {
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.sub_author p{
+  color: #fff;
+  font-size: 15px;
+}
+
+.tittle{
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: 0;
+}
+
+.tittle p{
+  letter-spacing: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: sans-serif;
+  padding-bottom: 1px;
+  color: white;
+}
+
+.tittle h1{
+  font-size: 46px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: white;
+  line-height: 1.2em;
+}
+
+.tittle hr{
+  width: 14%;
+  color: #333;
+  margin-left: 30px;
+}
+
+/* =============================
+Footer
+================================ */
+.main-footer{
+  background-color: #222;
+  color: #fff;
+  padding: 90px 0 60px 0;
+  z-index: 1;
+}
+
+/* .footer-container{
+  margin-left: 7%;
+  margin-right: 7%;
+} */
+
+.footer-row{
+  display: flex;
+  color: #fff;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.footer-about{
+  color: #fff;
+  /* width: 33.3%; */
+  padding: 0 7px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.footer-about h3{
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.footer-about p{
+  color: #adadad;
+  line-height: 2em;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 15px;
+}
+
+.footer-language{
+  margin-top: 30px;
+  width: 160px;
+  /* height: 50px; */
+  flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  background-color: #282828;
+  color: #adadad;
+}
+
+.footer-language select{
+  height: 50px;
+  width: 160px;
+  color: #adadad;
+  border:1px solid #282828;
+  background: inherit;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.footer-language option{
+  color: #fff;
+}
+
+.footer-explore{
+  width: 25%;
+  margin-left: 8.3%;
+}
+
+.footer-explore-inner{
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.footer-explore-inner h3{
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-explore-links{
+  display: inline;
+  color: #adadad;
+  cursor: pointer;
+}
+
+.footer-explore-links ul{
+  padding-left: 0;
+  line-height: 2em;
+}
+
+.footer-explore-links ul li{
+  list-style: none;
+  margin-top: 3px;
+}
+
+.footer-explore-links a{
+  text-decoration: none;
+  color: #adadad;
+}
+
+.footer-explore-links ul li:hover{
+  list-style-type: disc;
+  color: #8e6d45;
+}
+
+.footer-footer-contact{
+  width: 33.3%;
+}
+
+.footer-contact-inner{
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.footer-contact-inner h3{
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-contact-info{
+  display: inline;
+  color: #fff;
+}
+
+.footer-par{
+  color: #adadad;
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.75em;
+}
+
+.footer-contact-info{
+  color: #fff;
+  display: inline;
+}
+
+.footer-contact-phone{
+  display: flex;
+  font-size: 17px;
+  color: #fff;
+}
+
+.footer-contact-mail{
+  color: #fff;
+  text-decoration: 2px underline #8e6d45;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: sans-serif;
+  padding-bottom: 5px;
+}
+
+.fa-x{
+  color: #fff;
+  padding-right: 5px;
+}
+
+.footer-container{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.footer-container-2{
+  background: #1e1e1e;
+  text-align: center;
+  position: relative;
+  padding: 32px 0;
+  height: 10vh;
+  color: #fff;
+}
+
+.footer-icons{
+  display: flex;
+  color: #fff;
+}
+
+.footer-icons i{
+  padding: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-icons i:hover{
+  color: #8e6d45;
+}
+
+@media only screen and (max-width:650px){
+  .tittle{
+    text-align: left;
+    padding: 35px;
+    margin: 0;
+  }
+
+  .testimonials hr{
+    text-align: left;
+  }
+
+  .testimonials{
+    margin: 0;
+    text-align: left;
+  }
+
+  .testimonials h1{
+    font-size: 32px;
+    background-attachment: none;
+  }
+
+  .testimonials p{
+    font-size: 12px;
+  }
+
+  .mySlides{
+    padding: 35px;
+    margin: 0;
+  }
+
+  .mySlides br{
+    display: none;
+  }
+
+  .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+  }
+
+  .footer-about br{
+    display: none;
+  }
+
+  .footer-about{
+    width: 100%;
+  }
+
+  .footer-explore{
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-contact{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:651px) and (max-width:1060px){
+
+}
